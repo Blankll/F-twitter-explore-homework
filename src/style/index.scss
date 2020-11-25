@@ -1,3 +1,51 @@
 @import "variables";
 @import "mixins";
 @import "reboot";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 100px;
+  align-items: center;
+  border-bottom: solid 1px $border-color;
+}
+
+.main-container {
+  border: solid 1px $border-color;
+  border-radius: 5px;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  color: $white;
+  p:first-child {
+    text-align: center;
+  }
+  input {
+    background-color: transparent;
+    border-bottom: solid 1px $border-color;
+    height: 50px;
+    width: 90%;
+    &:focus {
+      outline: none;
+    }
+  }
+  .forget-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: $primary-color;
+
+    &:hover {
+      color: $link-hover-color;
+      cursor: pointer;
+    }
+  }
+}
+
+.submit-container {
+  margin-top: 20px;
+  text-align: center;
+  button {
+    width: 100%;
+  }
+}
